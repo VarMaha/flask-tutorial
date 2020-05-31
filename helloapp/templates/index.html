@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if users %}
+        {% for user in users %}
+            <li> {{user}} </li>
+        {% endfor %}
+    {% else %}
+        <h1>no fucking users!!!</h1>
+    {% endif %}
+{% endblock %}

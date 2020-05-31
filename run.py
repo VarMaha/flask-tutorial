@@ -1,0 +1,1 @@
+from jokeapp import app
