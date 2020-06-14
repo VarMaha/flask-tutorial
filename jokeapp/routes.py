@@ -14,3 +14,6 @@ def send_joke():
     joke = dict(joke)
     return render_template("show_joke.html",joke=joke)
 
+@app.route("/")
+def home():
+    return render_template("index.html")
