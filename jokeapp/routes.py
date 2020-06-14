@@ -6,7 +6,7 @@ import random
 @app.route("/joke")
 def send_joke():
     joke_path = os.path.join(os.path.dirname(os.path.abspath(__file__))
-                                            ,'resources','reddit_jokes.json').replace("\\","/")
+                                            ,'resources','reddit_jokes.json')
     with open(joke_path) as jokes:
         data = json.load(jokes)
     
